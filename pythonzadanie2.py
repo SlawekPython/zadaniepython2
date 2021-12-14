@@ -24,4 +24,14 @@ lastmonth = kredyt - suma
 
 print("Twoja pozostała kwota kredytu to " + str(suma))
 print("to " + str(lastmonth))
+print("mniej niż w poprzednim miesiacu \n")
+
+inflacja = -0.453509101
+
+suma_luty =  (1 + ((inflacja + float(oprocentowanie))/1200)) * suma - rata
+
+lastmonth = suma - suma_luty
+
+print("Twoja pozostała kwota kredytu to " + str(suma_luty))
+print("to " + str(lastmonth))
 print("mniej niż w poprzednim miesiacu")
