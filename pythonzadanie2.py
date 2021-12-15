@@ -34,4 +34,45 @@ lastmonth = suma - suma_luty
 
 print("Twoja pozostała kwota kredytu to " + str(suma_luty))
 print("to " + str(lastmonth))
-print("mniej niż w poprzednim miesiacu")
+print("mniej niż w poprzednim miesiacu \n")
+
+inflacja = 2.324671717
+
+suma_marzec = (1 + ((inflacja + float(oprocentowanie))/1200)) * suma_luty - rata
+
+lastmonth = suma_luty - suma_marzec
+
+print("twoja pozostała kwota kredytu to " + str(suma_marzec))
+print("to " + str(lastmonth))
+print("mniej niż w poprzednim miesiącu \n")
+
+inflacja = 1.261254407
+
+suma_kwiecien = (1 + ((inflacja + float(oprocentowanie))/1200)) * suma_marzec - rata
+
+lastmonth = suma_marzec - suma_kwiecien
+
+print("twoja pozostała kwota kredytu to " + str(suma_kwiecien))
+print("to " + str(lastmonth))
+print("mniej niż w poprzednim miesiącu \n")
+
+inflacja = 1.782526286
+
+suma_maj = (1 + ((inflacja + float(oprocentowanie))/1200)) * suma_kwiecien - rata
+
+lastmonth = suma_kwiecien - suma_maj
+
+print("twoja pozostała kwota kredytu to " + str(suma_maj))
+print("to " + str(lastmonth))
+print("mniej niż w poprzednim miesiącu \n")
+
+inflacja = 2.329384541
+
+suma_czerwiec = (1 + ((inflacja + float(oprocentowanie))/1200)) * suma_maj - rata
+
+lastmonth = suma_maj - suma_czerwiec
+
+print("twoja pozostała kwota kredytu to " + str(suma_czerwiec))
+print("to " + str(lastmonth))
+print("mniej niż w poprzednim miesiącu \n")
+
